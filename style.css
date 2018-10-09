@@ -188,14 +188,18 @@ h1#hand-crafted-styles span {
 
 section#MENS {
     background: url(/Users/chrishanson/Programming/RED-Academy/HTML/Project-1-Aloha-Homepage/project-01/images/mens-category.jpg);
-    background-repeat: no-repeat;
-    background-size: 1000px;
+    background-size: cover;
     display: flex;
     justify-content: center;
     text-align: center;
     font-family: "Raleway";
     color: white;
-    height: 1000px;
+    height: 500px;
+}
+
+p#MENS {
+    font-size: 48px;
+    padding: 160px;
 }
 
 footer {
