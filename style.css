@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-LightItalic.eot');
+    src: url('Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-LightItalic.woff2') format('woff2'),
+        url('Raleway-LightItalic.woff') format('woff'),
+        url('Raleway-LightItalic.ttf') format('truetype'),
+        url('Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Medium.eot');
+    src: url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Medium.woff2') format('woff2'),
+        url('Raleway-Medium.woff') format('woff'),
+        url('Raleway-Medium.ttf') format('truetype'),
+        url('Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Light.eot');
+    src: url('Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Light.woff2') format('woff2'),
+        url('Raleway-Light.woff') format('woff'),
+        url('Raleway-Light.ttf') format('truetype'),
+        url('Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-MediumItalic.eot');
+    src: url('Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-MediumItalic.woff2') format('woff2'),
+        url('Raleway-MediumItalic.woff') format('woff'),
+        url('Raleway-MediumItalic.ttf') format('truetype'),
+        url('Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Bold.eot');
+    src: url('PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('PlayfairDisplay-Bold.woff') format('woff'),
+        url('PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Italic.eot');
+    src: url('PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('PlayfairDisplay-Italic.woff') format('woff'),
+        url('PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.eot');
+    src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff'),
+        url('PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-BoldItalic.eot');
+    src: url('PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    font: Arial;
+    font-size: 16px
+}
+
+header {
+    position: relative;
+    top: 0;
+    right: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: stretch;
+  }
+
+#container-Aloha-logo {
+    justify-content: flex-start;
+}
+
+#container-Aloha-logo img {
+    height: 100px;
+}
+
+nav {
+    color: #e2574c;
+    word-spacing: 30px;
+    font-family: "Raleway";
+    text-align: center;
+    border-top-color: #d7d7d7;
+    border-top-style: solid;
+    margin: 15px;
+    }
+
+#container-Cart-logo {
+    align-self: center;
+}
+
+#container-Cart-logo img {
+    height: 100px;
+}
+
+section#class-background {
+background: url(/Users/chrishanson/Programming/RED-Academy/HTML/Project-1-Aloha-Homepage/project-01/images/banner-girl.png)
+, url(/Users/chrishanson/Programming/RED-Academy/HTML/Project-1-Aloha-Homepage/project-01/images/flower-bkgd.jpg);
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: bottom;
+background-size: 315px, auto;
+display: flex;
+align-content: center;
+text-align: center;
+justify-content: center;
+flex-flow: column wrap;
+height: 900px;
+}
+
+h1#SPRING-SUMMER {
+    color: white;
+    font-size: 72px;
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: 0 0 20px hsla(0,0%,39%,.8);
+}
+
+h3#NEW-COLLECTION {
+    color: white;
+    font-size: 32px;
+    font-family: "Raleway";
+}
+
+section#handcraftedstyles {
+    text-align: center;
+    font-family: "Raleway-Light";
+    line-height: 25px;
+    padding: 25px;
+}
+
+h1#hand-crafted-styles {
+    color:black;
+    font-family: "Playfair Display-Italic";
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 48px;
+}
+
+h1#hand-crafted-styles span {
+    font-family: "Playfair Display-Regular";
+    font-style: normal;
+    font-weight: bold;
+}
+
+section#MENS {
+    background: url(/Users/chrishanson/Programming/RED-Academy/HTML/Project-1-Aloha-Homepage/project-01/images/mens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Raleway";
+    color: white;
+    height: 1000px;
+}
+
+footer {
+    text-align: center;
+    word-spacing: 10px;
+    color: white;
+    background: #242424;
+}
+
+p#details {
+    word-spacing: 0px;
+    font-family: "Playfair Display"
+}
+
+p#address {
+    word-spacing: 0px;
+    color: #969696;
+    font-family: "Playfair Display";
+}
+
+span#email {
+    text-decoration: underline;
+}
