@@ -136,8 +136,8 @@ nav {
 }
 
 section#class-background {
-background: url(/Users/chrishanson/Programming/RED-Academy/HTML/Project-1-Aloha-Homepage/project-01/images/banner-girl.png)
-, url(/Users/chrishanson/Programming/RED-Academy/HTML/Project-1-Aloha-Homepage/project-01/images/flower-bkgd.jpg);
+background: url(project-01/images/banner-girl.png)
+, url(project-01/images/flower-bkgd.jpg);
 background-repeat: no-repeat;
 background-position-x: center;
 background-position-y: bottom;
@@ -187,7 +187,7 @@ h1#hand-crafted-styles span {
 }
 
 section#MENS {
-    background: url(/Users/chrishanson/Programming/RED-Academy/HTML/Project-1-Aloha-Homepage/project-01/images/mens-category.jpg);
+    background: url(project-01/images/mens-category.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
