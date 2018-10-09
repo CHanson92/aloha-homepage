@@ -202,6 +202,49 @@ p#MENS {
     padding: 160px;
 }
 
+section#CATEGORIES {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "RALEWAY";
+    color: white;
+    font-size: 48px;
+}
+
+section#TRENDS {
+    background: url("project-01/images/trends-category.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 50%;
+}
+
+section#GLASSES {
+    background: url("project-01/images/glasses-category.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 50%;
+}
+
+section#SALE {
+    background: url("project-01/images/sale-category.jpg");
+    background-size: cover;
+    background-repeat: inherit;
+    height: 500px;
+    width: 50%;
+}
+
+section#BAGS {
+    background: url("project-01/images/bags-category.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 50%;
+}
+
 footer {
     text-align: center;
     word-spacing: 10px;
