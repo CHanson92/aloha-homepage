@@ -5,9 +5,10 @@
 <head>
     <meta charset="utf-8">
     <title>Chris Hanson Aloha Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="Fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/flickity.min.css">
     <meta name="description" content="The Aloha Homepage designed by Chris Hanson">
     <meta name="author" content="Chris Hanson">
 </head>
@@ -15,9 +16,9 @@
 <body>
     <header>
         <div id="container-Aloha-logo">
-            <img src="project-01/images/aloha-logo.svg"> </div> 
+            <img src="css/images/aloha-logo.svg"> </div> 
             <div id="container-Cart-logo">
-            <img src="project-01/images/cart-icon.svg"> </div> 
+            <img src="css/images/cart-icon.svg"> </div> 
     </header>
     <section>
         <nav>
@@ -30,8 +31,8 @@
     </section>
 
     <section id= "class-background">
-        <h3 id= "NEW-COLLECTION">NEW COLLECTION</h3>
-        <h1 id= "SPRING-SUMMER">Spring/Summer <br />
+        <h3 id= "newCollection">NEW COLLECTION</h3>
+        <h1 id= "springSummer">Spring/Summer <br />
             2016</h1>
     </section>
 
@@ -48,33 +49,115 @@
 
     <section id = "CATEGORIES">
         <section id= "TRENDS">
-        <p id="TRENDS">TRENDS</p>
+        <p id="CATEGORIES">TRENDS</p>
         </section>
         <section id= "GLASSES">
-        <p id="GLASSES">GLASSES</p>
+        <p id="CATEGORIES">GLASSES</p>
         </section>
         <section id= "SALE">
-        <p id="SALE">SALE</p>
+        <p id="CATEGORIES">SALE</p>
         </section>
         <section id= "BAGS">
-        <p id="BAGS">BAGS</p>
+        <p id="CATEGORIES">BAGS</p>
         </section>
     </section>
 
+    <section id = "WOMENS">
+        <p id="WOMENS">WOMEN'S</p>
+    </section>
+
+    <section id = "MOST-LOVED-PRODUCTS">
+        <h1 id="MOST-LOVED-PRODUCTS">Most-Loved <span>Products</span></h1>
+        <div class="main-carousel">
+            <div class="carousel-cell"> 
+                <div id="reddress"><img src="css/images/checked-stretch-dress.jpg"></div>
+                <p id="dresses">DRESSES</p>
+                <p id="checkedstretch">Checked Stretch Dress</p>
+                <p id="price">$129.00</p>
+            </div>
+
+            <div class="carousel-cell">
+                <div id="backpack"><img src="css/images/blue-hipster-backpack.jpg"></div>
+                <p id="backpack">BAGS</p>
+                <p id="bluehipster">Blue Hipster Backpack</p>
+                <p id="price">$69.00</p>
+            </div>
+
+            <div class="carousel-cell">
+                <div id="denim"><img src="css/images/demin-overall-shorts.jpg"></div>
+                <p id="denim">DENIM</p>
+                <p id="shorts">Denim Overall Shorts</p>
+                <p id="price">$89.00</p>
+            </div>
+
+            <div class="carousel-cell">
+                <div id="pinkdress"><img src="css/images/pink-dotted-dress.jpg"></div>
+                <p id="dresses">DRESSES</p>
+                <p id="pinkdress">Pink Dotted Dress</p>
+                <p id="price">$99.00</p>
+            </div>
+
+            <div class="carousel-cell">
+                <div id="bluedress"><img src="css/images/blue-silk-dress.jpg"></div>
+                <p id="dresses">DRESSES</p>
+                <p id="bluedress">Blue Silk Dress</p>
+                <p id="price">$159.00</p>
+            </div>
+
+            <div class="carousel-cell">
+                <div id="cottonshirt"><img src="css/images/cotton-blue-shirt.jpg"></div>
+                <p id="shirts">SHIRTS</p>
+                <p id="cottonshirt">Blue Cotton Shirt</p>
+                <p id="price">$59.99</p>
+            </div>
+
+            <div class="carousel-cell">
+                <div id="cottontshirt"><img src="css/images/cotton-yellow-tshirt.jpg"></div>
+                <p id="tshirts">T-SHIRTS</p>
+                <p id="cottontshirt">Yellow Cotton T-Shirt</p>
+                <p id="price">$39.99</p>
+            </div>
+
+            <div class="carousel-cell">
+                <div id="stretchknitdress"><img src="css/images/stretch-knit-dress.jpg"></div>
+                <p id="dresses">DRESSES</p>
+                <p id="stretchknitdress">Stretch Knit Dress</p>
+                <p id="price">$129.99</p>
+            </div>
+          </div>
+       
+    </section>
+
+    <section id = "UPDATES">
+        <h1 id = "UPDATES">Sign-up for <span id = UPDATES>Updates</span></h1>
+        <p id = "UPDATES">Stay updated on our latest product releases, be first to find out about 
+            upcoming sales, and get free style tips from our blog. Unsubscribe at any time.
+        </p>
+        <form action= "submit">
+            <input type="text" name="email" placeholder="Your Email" />
+            <button id="subscribe" type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+            <p id="details">© 2016 Aloha Apparel Co.<br />
+               Powered by HTML and CSS.<br />
+               <br />
+               604-604-6040. <span id= "email">info@alohaapparel.com</span>
+            </p>
+            <p id= "address">1490 W Broadway <br />
+                 Vancouver, BC, Canada</p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
-<footer>
-<p id="details">© 2016 Aloha Apparel Co.<br />
-   Powered by HTML and CSS.<br />
-   <br />
-   604-604-6040. <span id= "email">info@alohaapparel.com</span>
-</p>
-<p id= "address">1490 W Broadway <br />
-     Vancouver, BC, Canada</p>
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-pinterest"></i>
-    <i class="fab fa-google-plus-g"></i>
-</footer>
+
 </html>
