@@ -12,5 +12,5 @@
 * 17-Oct-2018 - Submission of Project
 
 ----
-## thanks
-* RED Academy
+## Thanks
+* RED Academy and my classmates
