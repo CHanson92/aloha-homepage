@@ -94,46 +94,120 @@
     font-style: italic;
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
 p {
     font: Arial;
     font-size: 14px
 }
 
 header {
-    position: relative;
     top: 0;
     right: 0;
     display:flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
 #container-Aloha-logo {
     justify-content: flex-start;
+    display: inline-block;
+    flex-basis: 50%;
+    order: 0;
 }
 
 #container-Aloha-logo img {
-    height: 100px;
+    width: 100%;
 }
 
-nav {
-    color: #e2574c;
+#container-Cart-logo {
+    display: inline-block;
+    order: 0;
+    width: 100px;
+    padding-left:32px;
+}
+
+nav {  
+    width: 100%;
     word-spacing: 30px;
     font-family: "Raleway";
     font-size: 16px;
     text-align: center;
+    padding-top: 20px;
+    border-top: 2px;
     border-top-color: #d7d7d7;
     border-top-style: solid;
-    margin: 15px;
+    order: 1;
     }
 
-#container-Cart-logo {
-    align-self: center;
+ul {
+    padding:0px;
 }
 
-#container-Cart-logo img {
-    height: 100px;
+a:link {
+    color: #e2574c;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #e2574c;
+    text-decoration: none;
+}
+
+a:active {
+    color: #e2574c;
+    text-decoration: none;
 }
 
 section#class-background {
@@ -149,9 +223,10 @@ text-align: center;
 justify-content: center;
 flex-flow: column wrap;
 height: 900px;
+padding-top: 20px;
 }
 
-h1#springSummer {
+#class-background h1 {
     color: white;
     font-size: 48px;
     font-family: "Playfair Display";
@@ -160,7 +235,7 @@ h1#springSummer {
     text-shadow: 0 0 20px hsla(0,0%,39%,.8);
 }
 
-h3#newCollection {
+#class-background h3 {
     color: white;
     font-size: 24px;
     font-family: "Raleway";
@@ -173,23 +248,25 @@ section#handcraftedstyles {
     padding: 25px;
 }
 
-h1#hand-crafted-styles {
+#handcraftedstyles h1 {
     color:black;
     font-family: "Playfair Display-Italic";
     font-style: italic;
     font-weight: lighter;
     font-size: 36px;
+    padding-bottom: 20px;
 }
 
-h1#hand-crafted-styles span {
+#handcraftedstyles h1 span {
     font-family: "Playfair Display-Regular";
     font-style: normal;
     font-weight: bold;
 }
 
-section#MENS {
+section#mens {
     background: url("images/mens-category.jpg");
     background-size: cover;
+    background-position-x: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -198,12 +275,7 @@ section#MENS {
     height: 500px;
 }
 
-p#MENS {
-    font-size: 36px;
-    padding: 160px;
-}
-
-section#CATEGORIES {
+section#categories {
     align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
@@ -216,7 +288,7 @@ section#CATEGORIES {
     border-bottom: 5px solid white;
 }
 
-section#TRENDS {
+section#trends {
     background: url("images/trends-category.jpg");
     background-size: 100% 100%; 
     background-repeat: no-repeat;
@@ -227,7 +299,7 @@ section#TRENDS {
     border-bottom: 10px solid white;
 }
 
-section#GLASSES {
+section#glasses {
     background: url("images/glasses-category.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -238,7 +310,7 @@ section#GLASSES {
     border-bottom: 10px solid white;
 }
 
-section#SALE {
+section#sale {
     background: url("images/sale-category.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -248,7 +320,7 @@ section#SALE {
     box-sizing: border-box;
 }
 
-section#BAGS {
+section#bags {
     background: url("images/bags-category.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -258,14 +330,15 @@ section#BAGS {
     box-sizing: border-box;
 }
 
-p#CATEGORIES {
+p.categories {
     font-size: 36px;
     padding-top: 170px;
 }
 
-section#WOMENS {
+section#womens {
     background: url("images/womens-category.jpg");
     background-size: cover;
+    background-position-x: 68%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -275,16 +348,13 @@ section#WOMENS {
     border-top: 5px solid white;
 }
 
-p#WOMENS {
-    font-size: 36px;
-    padding-top: 160px;
-}
-
-section#MOST-LOVED-PRODUCTS {
+section#mostLovedProducts {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
-h1#MOST-LOVED-PRODUCTS {
+#mostLovedProducts h1 {
     color:black;
     font-family: "Playfair Display-Italic";
     font-style: italic;
@@ -292,7 +362,7 @@ h1#MOST-LOVED-PRODUCTS {
     font-size: 36px;
 }
 
-h1#MOST-LOVED-PRODUCTS span {
+#mostLovedProducts h1 span {
     font-family: "Playfair Display-Regular";
     font-style: normal;
     font-weight: bold;
@@ -302,33 +372,35 @@ h1#MOST-LOVED-PRODUCTS span {
     width: 100%;
 }
 
-p#dresses , p#backpack , p#denim , p#shirts , p#t-shirts {
+p.product-type {
     font-family: "Raleway";
     color: gray;
 }
 
-p#checkedstretch , p#bluehipster , p#shorts , p#pinkdress , p#bluedress , p#cottonshirt , p#cottontshirt ,
-p#stretchknitdress {
+#mostLovedProducts h3 {
     font-family: "Playfair Display-Regular";
     font-size: 24px;
     color: red;
 }
 
-p#price {
+p.price {
     font-family: "Raleway";
     color: gray;
 }
 
-section#UPDATES {
+section#updates {
     background: url("images/wave-bkgd.jpg");
     background-position: bottom center;
     background-size: cover;
     height: 275px;
     text-align: center;
     padding-top: 50px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
-h1#UPDATES {
+#updates h1 {
     color: white;
     font-family: "Playfair Display-Italic";
     font-style: italic;
@@ -337,16 +409,17 @@ h1#UPDATES {
     text-shadow: 0 0 40px hsla(0,0%,39%,.8);
 }
 
-h1#UPDATES span {
+#updates h1 span {
     font-family: "Playfair Display-Regular";
     font-style: normal;
     font-weight: bold;
     text-shadow: 0 0 40px hsla(0,0%,39%,.8);
 }
 
-p#UPDATES {
+#updates p {
     font-family: "Raleway";
     color:white;
+    padding-top: 20px;
 }
 
 form {
@@ -354,26 +427,38 @@ form {
     flex-direction: row;
     font-family: "Ralway";
     justify-content: center;
+    position:relative;
+    width:90%;
+    padding-top: 20px;
 }
 
 input {
     border: none;
     border-radius: 20px;
     color:#969696;
-    width: 70%;
-    padding: 18px 8px;
-    padding-left: 20px;
     box-sizing: border-box;
+    height: 51px;
+    padding-left:30px;
 }
 
-button#subscribe {
+input#subscribe {
     background: #e2574c;
     color: white;
     margin-top: 3px;
     border-radius: 20px;
     height: 45px;
-    width: 130px;
-    margin-left: -135px;
+    width: 150px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+input[type="email"] {
+    width: 100%;
+}
+
+input[type="submit"] {
+    position: absolute;
+    right: 0.25rem;
 }
 
 form button, form input {
@@ -389,15 +474,79 @@ footer {
 
 p#details {
     word-spacing: 0px;
-    font-family: "Playfair Display"
+    font-family: "Playfair Display";
+    padding-top: 20px;
 }
 
 p#address {
     word-spacing: 0px;
     color: #969696;
     font-family: "Playfair Display";
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 span#email {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        flex-basis: 0;
+    }
+    
+    #container-Aloha-logo {
+        justify-content: flex-start;
+        flex-basis: 30%;
+    }
+    
+    #container-Cart-logo {
+        order: 2;
+        padding-left: 0px;
+    }
+    
+    nav {
+    border-top: none;
+    order: 1;
+    width: 315px;
+    word-spacing: 15px;
+}
+
+    section#mens {
+        background-position-x: 85%;
+    }
+
+    section#womens {
+        background-position-x: 68%;
+    }
+}
+
+@media screen and (min-width:1240px) {
+    header {
+        margin-bottom: 20px;
+    }
+    
+    #container-Aloha-logo {
+        justify-content: flex-start;
+        display: inline-block;
+        flex-basis: 0;
+    }
+
+    #container-Aloha-logo img {
+        width: 300px;
+    }
+    
+    #container-Cart-logo {
+        display: inline-block;
+        order: 2;
+    }
+    
+    nav {
+    border-top: none;
+    width: 30%;
+    order: 1;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 150px;
+    }
 }
