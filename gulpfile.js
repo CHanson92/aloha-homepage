@@ -11,9 +11,9 @@ var uglifycss = require("gulp-uglifycss");
 var sass = require("gulp-sass");
 var browserSync = require("browser-sync").create();
 
-var ENTRY_FILE = "./js/src/script.js";
+var ENTRY_FILE = "./src/script.js";
 var OUTPUT_DIR = "./js";
-var OUTPUT_FILE = "script.js";
+var OUTPUT_FILE = "script.min.js";
 var DELAY = 50;
 
 gulp.task("browserify", function () {

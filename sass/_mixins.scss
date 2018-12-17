@@ -1,0 +1,52 @@
+@mixin primaryfontcolor {
+    color: white;
+}
+
+@mixin secondaryfontcolor {
+    color: black;
+}
+
+@mixin navfontcolor {
+    color: #e2574c;
+}
+
+@mixin carouselfontcolor {
+    color: red;
+}
+
+@mixin pcolor {
+    color: #969696;
+}
+
+@mixin category {
+    height: 31.25rem;
+}
+
+@mixin categories-font {
+font-family: "Raleway Medium";
+font-size: 2.25rem;
+color: white;
+
+}
+
+@mixin category-centertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin footerlinks {
+    a:link,
+    a:hover,
+    a:visited,
+    a:active {
+        color: white;
+        text-decoration: none;
+    }
+}

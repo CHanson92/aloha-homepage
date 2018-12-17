@@ -1,7 +1,6 @@
 <!-- Aloha Homepage-->
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Chris Hanson Aloha Homepage</title>
@@ -13,116 +12,111 @@
     <meta name="description" content="The Aloha Homepage designed by Chris Hanson">
     <meta name="author" content="Chris Hanson">
 </head>
-
 <body>
     <header>
-        <div id="container-Aloha-logo">
-            <img src="css/images/aloha-logo.svg"> </div> 
-            <div id="container-Cart-logo">
-            <img src="css/images/cart-icon.svg"> </div> 
-
+        <div class="Aloha-logo">
+            <img src="/images/aloha-logo.svg"> </div> 
         <nav>
-            <p>
-                <ul>
-                    <a href="#handcraftedstyles">ABOUT</a>
-                    <a href="#mens">SHOP</a>
-                    <a href="#mostLovedProducts">FEATURED</a>
-                    <a href="#updates">UPDATES</a>
-                </ul>
-            </p>
+            <ul>
+                <li><a href="#handcraftedstyles">ABOUT</a></li>
+                <li><a href="#categories">SHOP</a></li>
+                <li><a href="#mostLovedProducts">FEATURED</a></li>
+                <li><a href="#updates">UPDATES</a></li>
+            </ul>
         </nav>
+        <div class="Cart-logo">
+            <img src="/images/cart-icon.svg"> </div> 
     </header>
 
-    <section id= "class-background">
+    <section class= "class-background">
         <h3>NEW COLLECTION</h3>
-        <h1>Spring/Summer <br />
-            2016</h1>
+        <h1>Spring/Summer 2019</h1>
     </section>
 
-    <section id= "handcraftedstyles">
+    <section class= "handcraftedstyles">
         <h1>Hand-Crafted <span> Styles </span></h1>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. <br />
            Browse our current selection of products or sign-up for updates below.
         </p>
     </section>
 
-    <section id="mens">
-        <p class="categories">MEN'S</p>
+
+
+    <section class="categories">
+        <section class="mens">
+            <p>MEN'S</p>
+        </section>
+        <section class="trends">
+            <p>TRENDS</p>
+        </section>
+        <section class="glasses">
+            <p>GLASSES</p>
+        </section>
+        <section class="sale">
+            <p>SALE</p>
+        </section>
+        <section class="bags">
+            <p>BAGS</p>
+        </section>
+        <section class = "womens">
+            <p>WOMEN'S</p>
+        </section>
     </section>
 
-    <section id="categories">
-        <section id="trends">
-        <p class="categories">TRENDS</p>
-        </section>
-        <section id="glasses">
-        <p class="categories">GLASSES</p>
-        </section>
-        <section id="sale">
-        <p class="categories">SALE</p>
-        </section>
-        <section id="bags">
-        <p class="categories">BAGS</p>
-        </section>
-    </section>
-
-    <section id = "womens">
-        <p class="categories">WOMEN'S</p>
-    </section>
-
-    <section id="mostLovedProducts">
+    <section class="mostlovedproducts">
         <h1>Most-Loved <span>Products</span></h1>
         <div class="main-carousel">
             <div class="carousel-cell"> 
-                <img src="css/images/checked-stretch-dress.jpg">
+                <img src="/images/checked-stretch-dress.jpg">
                 <p class="product-type">DRESSES</p>
                 <h3>Checked Stretch Dress</h3>
                 <p class="price">$129.00</p>
             </div>
 
             <div class="carousel-cell">
-                <img src="css/images/blue-hipster-backpack.jpg">
+                <img src="/images/blue-hipster-backpack.jpg">
                 <p class="product-type">BAGS</p>
                 <h3>Blue Hipster Backpack</h3>
                 <p class="price">$69.00</p>
             </div>
 
             <div class="carousel-cell">
-                <img src="css/images/demin-overall-shorts.jpg">
+                <img src="/images/demin-overall-shorts.jpg">
                 <p class="product-type">DENIM</p>
                 <h3>Denim Overall Shorts</h3>
                 <p class="price">$89.00</p>
             </div>
 
             <div class="carousel-cell">
-                <img src="css/images/pink-dotted-dress.jpg">
+                <img src="/images/pink-dotted-dress.jpg">
                 <p class="product-type">DRESSES</p>
                 <h3>Pink Dotted Dress</h3>
                 <p class="price">$99.00</p>
             </div>
 
             <div class="carousel-cell">
-                <img src="css/images/blue-silk-dress.jpg">
+                <img src="/images/blue-silk-dress.jpg">
                 <p class="product-type">DRESSES</p>
                 <h3>Blue Silk Dress</h3>
                 <p class="price">$159.00</p>
             </div>
 
             <div class="carousel-cell">
-                <img src="css/images/cotton-blue-shirt.jpg">
+                <img src="/images/cotton-blue-shirt.jpg">
                 <p class="product-type">SHIRTS</p>
                 <h3>Blue Cotton Shirt</h3>
                 <p class="price">$59.99</p>
             </div>
 
             <div class="carousel-cell">
-                <img src="css/images/cotton-yellow-tshirt.jpg">
+                <img src="/images/cotton-yellow-tshirt.jpg">
                 <p class="product-type">T-SHIRTS</p>
                 <h3>Yellow Cotton T-Shirt</h3>
                 <p class="price">$39.99</p>
             </div>
 
             <div class="carousel-cell">
-                <img src="css/images/stretch-knit-dress.jpg">
+                <img src="/images/stretch-knit-dress.jpg">
                 <p class="product-type">DRESSES</p>
                 <h3>Stretch Knit Dress</h3>
                 <p class="price">$129.99</p>
@@ -131,37 +125,43 @@
        
     </section>
 
-    <section id="updates">
+    <section class="updates">
         <h1>Sign-up for <span>Updates</span></h1>
-        <p>Stay updated on our latest product releases, be first <br /> 
-                          to find out about upcoming sales, and get free style tips <br />
-                          from our blog. Unsubscribe at any time.
-        </p>
+        <p>Stay updated on our latest product releases, be first to find out about <br /> 
+            upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <form>
-            <input type="email" name="email" id="subscribe-email" placeholder="Your Email" />
-            <input type="submit" name="subscribe" id="subscribe" value="Subscribe">
+            <input type="email" name="email" class="subscribe-email" placeholder="Your Email" />
+            <input type="submit" name="subscribe" class="subscribe" value="Subscribe">
         </form>
     </section>
 
     <footer>
-            <p id="details">© 2016 Aloha Apparel Co.<br />
-               Powered by HTML and CSS.<br />
-               <br />
-               604-604-6040. <span id= "email">info@alohaapparel.com</span>
-            </p>
-            <p id= "address">1490 W Broadway <br />
-                 Vancouver, BC, Canada</p>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-pinterest"></i>
-                <i class="fab fa-google-plus-g"></i>
+        <section class="details">            
+            <p>© 2016 Aloha Apparel Co.<br />
+            Powered by HTML and CSS.<br />
+            <br />
+            604-604-6040. <a href="#" class= "email">info@alohaapparel.com</a>
+         </p>
+         <p class="address">1490 W Broadway <br />
+            Vancouver, BC, Canada</p>
+        </section>
+
+        <section class="logo"></section>
+
+         <section class="socialmedia">
+            <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i><span>Pinterest</span></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i><span>Google+</span></a></li>
+            </ul>
+        </section>
+
             </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/flickity.pkgd.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
-
-
 </html>

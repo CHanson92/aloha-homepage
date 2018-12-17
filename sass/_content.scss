@@ -1,0 +1,311 @@
+/* Body requirements */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+p {
+    font-size: 16px
+}
+
+/* Header requirements */
+
+header {
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: white;
+
+    .Aloha-logo {
+        display: flex;
+        justify-content: left;
+        margin-left: 5rem;
+        img {
+        height: auto;
+        max-width: 10rem;
+        }
+    }
+
+    nav {  
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        font-family: "Raleway";
+        font-size: 1rem;
+        ul {
+            li {
+                display: inline-block;
+                padding-right: 2rem;
+            }
+        }
+
+
+        a:link,
+        a:visited,
+        a:active {
+            color: #e2574c;
+            text-decoration: none;
+        }
+    }
+
+    .Cart-logo {
+        display: flex;
+        justify-self: right;
+        margin-right: 5rem;
+        img {
+        height: auto;
+        max-width: 3.875rem;
+        }
+    }
+}
+
+/* Class Background */
+
+.class-background {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: url("/images/banner-girl.png"), url("/images/flower-bkgd.jpg");
+height: 56rem;
+background-position-x: 50%;
+background-position-y: 100%;
+background-size: 20rem, cover;
+background-repeat: no-repeat;
+
+    h1, h3 {
+        color: white;
+        text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+    }
+    h1 {
+        font-family: "Playfair Display";
+        font-size: 48px;
+    }
+    h3 {
+        font-family: "Raleway";
+        font-size: 1.25rem;
+    }
+}
+
+/* Hand-Crafted Styles */
+
+.handcraftedstyles {
+    font-family: "Raleway Light";
+    text-align: center;
+    line-height: 2rem;
+    margin: 2rem;
+    h1 {
+        font-family: "Playfair DisplayItalic";
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+        span {
+            font-family: "Playfair DisplayBold";
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    }
+}
+
+/* Categories */
+
+.categories {
+    @include category;
+    p {
+        @include categories-font;
+    }
+    .mens {
+        @include category-centertext;
+        background: url("/images/mens-category.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trends {
+        @include category-centertext;
+        background: url("/images/trends-category.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .glasses {
+        @include category-centertext;
+        background: url("/images/glasses-category.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .sale {
+        @include category-centertext;
+        background: url("/images/sale-category.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bags {
+        @include category-centertext;
+        background: url("/images/bags-category.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .womens {
+        @include category-centertext;
+        background: url("/images/womens-category.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/*  Most-Loved products */
+
+.mostlovedproducts {
+    text-align: center;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    .carousel-cell {
+        width: 25%;
+    }
+
+    h1 {
+        color:black;
+        font-family: "Playfair DisplayItalic";
+        font-size: 2.25rem;
+        margin-bottom: 2.5rem;
+        span {
+        font-family: "Playfair DisplayBold";
+        }
+    }
+
+    h3 {
+        font-family: "Playfair Display";
+        font-size: 1.5rem;
+        color: red;
+    }
+
+    p {
+        font-family: "Raleway Light";
+        color: gray;
+    }
+}
+
+/* Updates */
+
+.updates {
+    background: url("/images/wave-bkgd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 0.5rem;
+    height: 20rem;
+
+    h1 {
+        @include center;
+        color: white;
+        font-family: "Playfair DisplayItalic";
+        font-size: 2.25rem;
+        text-shadow: 0 0 40px hsla(0,0%,39%,.8);
+        span {
+            font-family: "Playfair DisplayBold";
+            text-shadow: 0 0 40px hsla(0,0%,39%,.8);
+            margin-left: 0.5rem;
+        }
+    }
+
+    p {
+        @include center;
+        font-family: "Raleway Light";
+        color:white;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+
+    form {
+        @include center;
+        flex-direction: row;
+        font-family: "Ralway";
+
+        form button, form input {
+            font-size: 1rem;
+        }
+
+        input[type="email"] {
+            padding-left: 1.875rem;
+        }
+
+        .subscribe-email {
+            border: none;
+            border-radius: 1.25rem;
+            color:#969696;
+            box-sizing: border-box;
+            height: 3rem;
+            flex-grow: 2;
+            font-size: 1rem;
+
+        }
+
+        .subscribe {
+            background: #e2574c;
+            color: white;
+            margin-top: 3px;
+            border-radius: 1.25rem;
+            height: 2.8125rem;
+            width: 9.375rem;
+            font-size: 1rem;
+        }
+    }
+
+}
+
+/* Footer */
+
+footer {
+    background: #242424;
+    font-family: "Playfair Display";
+    padding-bottom: 2.5rem;
+    .details {
+        @include primaryfontcolor;
+        justify-self: left;
+        line-height: 1.25rem;
+        margin-left: 2rem;
+        margin-top: 2.5rem;
+        .address {
+            @include pcolor;
+            margin-top: 1.25rem;
+        }
+        .email {
+            @include footerlinks;
+            text-decoration: underline;
+            margin-left: 0.25rem;
+        }
+    }
+
+    .logo {
+        background: url('/images/aloha-logo.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .socialmedia {
+        @include primaryfontcolor;
+        @include footerlinks;
+        display: flex;
+        justify-self: right;
+        align-self: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin-right: 7.5rem;
+            li {
+                padding-top: 1.5rem;
+                a {
+                    i {
+                        min-width: 25px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
