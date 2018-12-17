@@ -10,52 +10,112 @@ p {
 
 /* Header requirements */
 
-header {
-    margin: 0 auto;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    background: white;
-
-    .Aloha-logo {
-        display: flex;
-        justify-content: left;
-        margin-left: 5rem;
-        img {
-        height: auto;
-        max-width: 10rem;
-        }
+@media screen and (min-width: 320px) {
+    p {
+        font-size: 14px;
     }
+}
 
-    nav {  
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        font-family: "Raleway";
-        font-size: 1rem;
-        ul {
-            li {
-                display: inline-block;
-                padding-right: 2rem;
+@media screen and (min-width: 600px) {
+    header {
+
+        .Aloha-logo {
+            display: flex;
+            justify-content: left;
+            img {
+            height: auto;
+            max-width: 10rem;
             }
         }
+    
+        nav {  
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            font-family: "Raleway";
+            font-size: 1rem;
+            ul {
+                li {
+                    display: inline-block;
+                    padding-right: 1rem;
+                }
+            }
+    
+    
+            a:link,
+            a:visited,
+            a:active {
+                color: #e2574c;
+                text-decoration: none;
+            }
+        }
+    
+        .Cart-logo {
+            display: flex;
+            justify-self: right;
+            img {
+            height: auto;
+            max-width: 3.875rem;
+            }
+        }
+    }
+}
 
-
-        a:link,
-        a:visited,
-        a:active {
-            color: #e2574c;
-            text-decoration: none;
+@media screen and (min-width: 1240px) {
+    header {
+        margin: 0 auto;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background: white;
+    
+        .Aloha-logo {
+            display: flex;
+            justify-content: left;
+            margin-left: 5rem;
+            img {
+            height: auto;
+            max-width: 10rem;
+            }
+        }
+    
+        nav {  
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            font-family: "Raleway";
+            font-size: 1rem;
+            ul {
+                li {
+                    display: inline-block;
+                    padding-right: 2rem;
+                }
+            }
+    
+    
+            a:link,
+            a:visited,
+            a:active {
+                color: #e2574c;
+                text-decoration: none;
+            }
+        }
+    
+        .Cart-logo {
+            display: flex;
+            justify-self: right;
+            margin-right: 5rem;
+            img {
+            height: auto;
+            max-width: 3.875rem;
+            }
         }
     }
 
-    .Cart-logo {
-        display: flex;
-        justify-self: right;
-        margin-right: 5rem;
-        img {
-        height: auto;
-        max-width: 3.875rem;
+    .mostlovedproducts {
+
+        .carousel-cell {
+            width: 25%;
         }
     }
 }
@@ -187,6 +247,19 @@ background-repeat: no-repeat;
         font-family: "Raleway Light";
         color: gray;
     }
+
+    @media screen and (min-width: 320px) {
+        .carousel-cell {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .carousel-cell {
+            width: 50%;
+        }
+    }
+
 }
 
 /* Updates */
