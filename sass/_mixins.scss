@@ -18,6 +18,29 @@
     color: #969696;
 }
 
+@mixin class-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/banner-girl.png"), url("/images/flower-bkgd.jpg");
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    h1, h3 {
+        color: white;
+        text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+    }
+    h1 {
+        font-family: "Playfair Display";
+        font-size: 48px;
+    }
+    h3 {
+        font-family: "Raleway";
+        font-size: 1.25rem;
+    }
+}
+
 @mixin category {
     height: 31.25rem;
 }
