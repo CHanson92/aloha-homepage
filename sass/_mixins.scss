@@ -183,6 +183,7 @@ color: white;
         color:white;
         line-height: 1.5rem;
         text-align: center;
+        text-shadow: 0 0 40px hsla(0,0%,39%,.8);
     }
     form { 
         @include center;

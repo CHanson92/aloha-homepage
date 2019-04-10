@@ -61,7 +61,7 @@ p {
     .class-background {
         @include class-background;
         height: 33em;
-        background-size: 35%, cover;
+        background-size: contain, cover;
     }
 
     /* Hand-Crafted Styles */
@@ -142,6 +142,7 @@ p {
         .Aloha-logo {
             display: flex;
             justify-content: left;
+            border-bottom: none;
             img {
             height: auto;
             max-width: 10rem;
@@ -169,6 +170,7 @@ p {
         .Cart-logo {
             display: flex;
             justify-self: right;
+            border-bottom: none;
             img {
             height: auto;
             max-width: 3.875rem;
@@ -176,9 +178,121 @@ p {
         }
     }
 
+    /* Class Background */
+    .class-background {
+        @include class-background;
+        height: 33em;
+        background-size: contain, cover;
+    }
+
+    /* Categories */
+    .categories {
+        height: 31.25rem;
+        p {
+            @include categories-font;
+        }
+        .mens {
+            @include category-centertext;
+            background: url("/images/mens-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .trends {
+            @include category-centertext;
+            background: url("/images/trends-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .glasses {
+            @include category-centertext;
+            background: url("/images/glasses-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .sale {
+            @include category-centertext;
+            background: url("/images/sale-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .bags {
+            @include category-centertext;
+            background: url("/images/bags-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .womens {
+            @include category-centertext;
+            background: url("/images/womens-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
     /* Most loved products */
-    .carousel-cell {
-        width: 50%;
+    .mostlovedproducts {
+        @include mostlovedproductsheader;
+        .carousel-cell {
+            @include carousel;
+            width: 50%;
+        }
+    }
+
+    /* Updates */
+    .updates {
+        @include updates;
+    }
+
+    /* Footer */
+    footer {
+        background: #242424;
+        font-family: "Playfair Display";
+        padding-bottom: 2.5rem;
+        .details {
+            @include primaryfontcolor;
+            justify-self: center;
+            line-height: 1.25rem;
+            margin-top: 2.5rem;
+            text-align: left;
+            .address {
+                @include pcolor;
+                margin-top: 1.25rem;
+            }
+            .email {
+                @include footerlinks;
+                text-decoration: underline;
+                margin-left: 0.25rem;
+            }
+        }
+        .logo {
+            display: block;
+        }
+        .socialmedia {
+            @include primaryfontcolor;
+            @include footerlinks;
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    padding-top: 1.5rem;
+                    a {
+                        display: flex;
+                        i {
+                            min-width: 25px;
+                        }
+                        span {
+                            display: block;
+                            margin-left: 1em;
+                            margin-right: 1em;
+                        }
+                    }
+                }
+            } 
+        }
     }
 }
 
@@ -208,13 +322,14 @@ p {
             font-family: "Raleway";
             font-size: 1rem;
             ul {
+                display: flex;
+                flex-flow: row wrap;
                 li {
                     display: inline-block;
                     padding-right: 2rem;
                 }
             }
-    
-    
+
             a:link,
             a:visited,
             a:active {
@@ -289,50 +404,50 @@ p {
     
     /* Categories */
     .categories {
-    height: 31.25rem;
-    p {
-        @include categories-font;
-    }
-    .mens {
-        @include category-centertext;
-        background: url("/images/mens-category.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .trends {
-        @include category-centertext;
-        background: url("/images/trends-category.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .glasses {
-        @include category-centertext;
-        background: url("/images/glasses-category.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .sale {
-        @include category-centertext;
-        background: url("/images/sale-category.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .bags {
-        @include category-centertext;
-        background: url("/images/bags-category.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .womens {
-        @include category-centertext;
-        background: url("/images/womens-category.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+        height: 31.25rem;
+        p {
+            @include categories-font;
+        }
+        .mens {
+            @include category-centertext;
+            background: url("/images/mens-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .trends {
+            @include category-centertext;
+            background: url("/images/trends-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .glasses {
+            @include category-centertext;
+            background: url("/images/glasses-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .sale {
+            @include category-centertext;
+            background: url("/images/sale-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .bags {
+            @include category-centertext;
+            background: url("/images/bags-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .womens {
+            @include category-centertext;
+            background: url("/images/womens-category.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 
     /*  Most-Loved products */
