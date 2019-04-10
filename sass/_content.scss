@@ -61,12 +61,78 @@ p {
     .class-background {
         @include class-background;
         height: 33em;
-        background-size: 30%, cover;
+        background-size: 35%, cover;
+    }
+
+    /* Hand-Crafted Styles */
+    .handcraftedstyles {
+        @include handcraftedstyles;
+    }
+
+    /* Categories */
+    .categories {
+        height: 50em;
+        @include categories;
     }
 
     /* Most loved products */
-    .carousel-cell {
-        width: 100%;
+    .mostlovedproducts {
+        @include mostlovedproductsheader;
+        .carousel-cell {
+            @include carousel;
+            width: 100%;
+        }
+    }
+
+    /* Updates */
+    .updates {
+        @include updates;
+    }
+
+    /* Footer */
+    footer {
+        background: #242424;
+        font-family: "Playfair Display";
+        padding-bottom: 2.5rem;
+        text-align: center;
+        .details {
+            @include primaryfontcolor;
+            justify-self: center;
+            line-height: 1.25rem;
+            margin-top: 2.5rem;
+            .address {
+                @include pcolor;
+                margin-top: 1.25rem;
+            }
+            .email {
+                @include footerlinks;
+                text-decoration: underline;
+                margin-left: 0.25rem;
+            }
+        }
+        .logo {
+            display: none;
+        }
+        .socialmedia {
+            @include primaryfontcolor;
+            @include footerlinks;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                li {
+                    padding-top: 1.5rem;
+                    a {
+                        i {
+                            min-width: 25px;
+                        }
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            } 
+        }
     }
 }
 
@@ -169,7 +235,6 @@ p {
     }
 
     /* Most loved products */
-
     .mostlovedproducts {
 
         .carousel-cell {
@@ -178,7 +243,6 @@ p {
     }
 
     /* Class Background */
-
     .class-background {
     display: flex;
     flex-direction: column;
@@ -206,7 +270,6 @@ p {
     }
 
     /* Hand-Crafted Styles */
-
     .handcraftedstyles {
     font-family: "Raleway Light";
     text-align: center;
@@ -225,9 +288,8 @@ p {
     }
     
     /* Categories */
-
     .categories {
-    @include category;
+    height: 31.25rem;
     p {
         @include categories-font;
     }
@@ -274,7 +336,6 @@ p {
     }
 
     /*  Most-Loved products */
-
     .mostlovedproducts {
         text-align: center;
         padding-top: 2.5rem;
@@ -313,7 +374,6 @@ p {
     }
 
     /* Updates */
-
     .updates {
     background: url("/images/wave-bkgd.jpg");
     background-size: cover;
@@ -321,7 +381,6 @@ p {
     background-position: bottom;
     margin-bottom: 0.5rem;
     height: 20rem;
-
     h1 {
         @include center;
         color: white;
@@ -334,7 +393,6 @@ p {
             margin-left: 0.5rem;
         }
     }
-
     p {
         @include center;
         font-family: "Raleway Light";
@@ -342,7 +400,6 @@ p {
         line-height: 1.5rem;
         text-align: center;
     }
-
     form {
         @include center;
         flex-direction: row;
@@ -377,11 +434,9 @@ p {
             font-size: 1rem;
         }
     }
-
     }
 
     /* Footer */
-
     footer {
     background: #242424;
     font-family: "Playfair Display";
@@ -428,8 +483,7 @@ p {
                     }
                 }
             }
-        }
-        
+        } 
     }
     }
 }
