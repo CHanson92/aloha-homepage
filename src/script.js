@@ -3,4 +3,5 @@ $('.main-carousel').flickity({
     cellAlign: 'left',
     contain: true,
     groupCells: true
-	});
+});
+
