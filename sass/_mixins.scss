@@ -1,238 +1,236 @@
 @mixin primaryfontcolor {
-  color: white;
+	color: white;
 }
 
 @mixin secondaryfontcolor {
-  color: black;
+	color: black;
 }
 
 @mixin navfontcolor {
-  color: #e2574c;
-}
-
-@mixin carouselfontcolor {
-  color: red;
+	color: #e2574c;
 }
 
 @mixin pcolor {
-  color: #969696;
+	color: #969696;
 }
 
 @mixin class-background {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
-  background-position-x: 50%;
-  background-position-y: 100%;
-  background-repeat: no-repeat;
-  h1,
-  h3 {
-    color: white;
-    text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  }
-  h1 {
-    font-family: "Playfair Display";
-    font-size: 48px;
-  }
-  h3 {
-    font-family: "Raleway";
-    font-size: 1.25rem;
-    padding-bottom: 1em;
-  }
-  span {
-    display: flex;
-    justify-content: center;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url('../images/banner-girl.png'),
+		url('../images/flower-bkgd.jpg');
+	background-position-x: 50%;
+	background-position-y: 100%;
+	background-repeat: no-repeat;
+	h1,
+	h3 {
+		color: white;
+		text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+	}
+	h1 {
+		font-family: 'Playfair Display';
+		font-size: 48px;
+	}
+	h3 {
+		font-family: 'Raleway';
+		font-size: 1.25rem;
+		padding-bottom: 1em;
+	}
+	span {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 @mixin handcraftedstyles {
-  font-family: "Raleway Light";
-  text-align: center;
-  line-height: 2rem;
-  margin: 2rem;
-  h1 {
-    font-family: "Playfair DisplayItalic";
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
-    span {
-      font-family: "Playfair DisplayBold";
-      font-size: 2.4rem;
-      font-weight: 700;
-    }
-  }
+	font-family: 'Raleway Light';
+	text-align: center;
+	line-height: 2rem;
+	margin: 2rem;
+	h1 {
+		font-family: 'Playfair DisplayItalic';
+		font-size: 2.4rem;
+		margin-bottom: 1.5rem;
+		span {
+			font-family: 'Playfair DisplayBold';
+			font-size: 2.4rem;
+		}
+	}
 }
 
 @mixin categories {
-  p {
-    @include categories-font;
-  }
-  .mens {
-    @include category-centertext;
-    background: url("../images/mens-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .trends {
-    @include category-centertext;
-    background: url("../images/trends-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .glasses {
-    @include category-centertext;
-    background: url("../images/glasses-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .sale {
-    @include category-centertext;
-    background: url("../images/sale-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .bags {
-    @include category-centertext;
-    background: url("../images/bags-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .womens {
-    @include category-centertext;
-    background: url("../images/womens-category.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+	p {
+		@include categories-font;
+	}
+	.mens {
+		@include category-centertext;
+		background: url('../images/mens-category.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.trends {
+		@include category-centertext;
+		background: url('../images/trends-category.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.glasses {
+		@include category-centertext;
+		background: url('../images/glasses-category.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.sale {
+		@include category-centertext;
+		background: url('../images/sale-category.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.bags {
+		@include category-centertext;
+		background: url('../images/bags-category.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.womens {
+		@include category-centertext;
+		background: url('../images/womens-category.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
 
 @mixin categories-font {
-  font-family: "Raleway Medium";
-  font-size: 2.25rem;
-  color: white;
+	font-family: 'Raleway';
+	font-size: 2.25rem;
+	color: white;
 }
 
 @mixin category-centertext {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @mixin mostlovedproductsheader {
-  text-align: center;
-  padding-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  h1 {
-    color: black;
-    font-family: "Playfair DisplayItalic";
-    font-size: 2.25rem;
-    margin-bottom: 2.5rem;
-    span {
-      font-family: "Playfair DisplayBold";
-    }
-  }
-  h3 {
-    font-family: "Playfair Display";
-    font-size: 1.5rem;
-    color: red;
-    padding-top: 1em;
-  }
+	text-align: center;
+	padding-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	h1 {
+		color: black;
+		font-family: 'Playfair DisplayItalic';
+		font-size: 2.25rem;
+		margin-bottom: 2.5rem;
+		span {
+			font-family: 'Playfair DisplayBold';
+		}
+	}
+	h3 {
+		font-family: 'Playfair Display';
+		font-size: 1.5rem;
+		color: red;
+		padding-top: 1em;
+	}
 }
 
 @mixin carousel {
-  p {
-    font-family: "Raleway Light";
-    color: gray;
-    padding-top: 1em;
-  }
+	p {
+		font-family: 'Raleway';
+		color: gray;
+		padding-top: 1em;
+	}
 
-  button {
-    @include primaryfontcolor;
-    background: black;
-    border-radius: 1rem;
-    margin-top: 1em;
-  }
+	h3 {
+		color: #e2574c;
+	}
+
+	button {
+		@include primaryfontcolor;
+		background: black;
+		border-radius: 1rem;
+		margin-top: 1em;
+	}
 }
 
 @mixin updates {
-  background: url("../images/wave-bkgd.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin-bottom: 0.5rem;
-  height: 20rem;
-  h1 {
-    @include center;
-    color: white;
-    font-family: "Playfair DisplayItalic";
-    font-size: 2.25rem;
-    text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
-    span {
-      font-family: "Playfair DisplayBold";
-      text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
-      margin-left: 0.5rem;
-    }
-  }
-  p {
-    @include center;
-    font-family: "Raleway Light";
-    color: white;
-    line-height: 1.5rem;
-    text-align: center;
-    text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
-  }
-  form {
-    @include center;
-    flex-direction: row;
-    font-family: "Ralway";
+	background: url('../images/wave-bkgd.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin-bottom: 0.5rem;
+	height: 20rem;
+	h1 {
+		@include center;
+		color: white;
+		font-family: 'Playfair DisplayItalic';
+		font-size: 2.25rem;
+		text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
+		span {
+			font-family: 'Playfair DisplayBold';
+			text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
+			margin-left: 0.5rem;
+		}
+	}
+	p {
+		@include center;
+		font-family: 'Raleway Light';
+		color: white;
+		line-height: 1.5rem;
+		text-align: center;
+		text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
+	}
+	form {
+		@include center;
+		flex-direction: row;
+		font-family: 'Raleway Medium';
 
-    form button,
-    form input {
-      font-size: 1rem;
-    }
+		form button,
+		form input {
+			font-size: 1rem;
+		}
 
-    input[type="email"] {
-      padding-left: 1.875rem;
-    }
+		input[type='email'] {
+			padding-left: 1.875rem;
+		}
 
-    .subscribe-email {
-      border: none;
-      border-radius: 1.25rem;
-      color: #969696;
-      box-sizing: border-box;
-      height: 3rem;
-      flex-grow: 2;
-      font-size: 1rem;
-    }
+		.subscribe-email {
+			border: none;
+			border-radius: 1.25rem;
+			color: #969696;
+			box-sizing: border-box;
+			height: 3rem;
+			flex-grow: 2;
+			font-size: 1rem;
+		}
 
-    .subscribe {
-      background: #e2574c;
-      color: white;
-      margin-top: 3px;
-      border-radius: 1.25rem;
-      height: 2.8125rem;
-      width: 9.375rem;
-      font-size: 1rem;
-    }
-  }
+		.subscribe {
+			background: #e2574c;
+			color: white;
+			margin-top: 3px;
+			border-radius: 1.25rem;
+			height: 2.8125rem;
+			width: 9.375rem;
+			font-size: 1rem;
+		}
+	}
 }
 
 @mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @mixin footerlinks {
-  a:link,
-  a:hover,
-  a:visited,
-  a:active {
-    color: white;
+	a {
+		color: white;
     text-decoration: none;
-  }
+    cursor: pointer;
+	}
 }
