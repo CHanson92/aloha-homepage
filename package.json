@@ -2,10 +2,9 @@
   "name": "aloha1",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.html",
   "scripts": {
-    "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html"
+    "start": "rm -rf .parcel-cache docs && parcel public/index.html --dist-dir docs",
+    "build": "rm -rf .parcel-cache docs && parcel build public/index.html --dist-dir docs"
   },
   "author": "",
   "license": "ISC",
