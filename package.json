@@ -1,12 +1,12 @@
 {
-  "name": "aloha1",
+  "name": "aloha-homepage",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "rm -rf .parcel-cache docs && parcel public/index.html --dist-dir docs",
     "build": "rm -rf .parcel-cache docs && parcel build public/index.html --dist-dir docs"
   },
-  "author": "",
+  "author": "Chris Hanson",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.16.0",
