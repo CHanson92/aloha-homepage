@@ -19,8 +19,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: url('../images/banner-girl.png'),
-		url('../images/flower-bkgd.jpg');
+	background: url('../../assets/images/banner-girl.png'),
+		url('../../assets/images/flower-bkgd.jpg');
 	background-position-x: 50%;
 	background-position-y: 100%;
 	background-repeat: no-repeat;
@@ -66,41 +66,41 @@
 	}
 	.mens {
 		@include category-centertext;
-		background: url('../images/mens-category.jpg');
+		background: url('../../assets/images/mens-category.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	.trends {
 		@include category-centertext;
-		background: url('../images/trends-category.jpg');
+		background: url('../../assets/images/trends-category.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
 	.glasses {
 		@include category-centertext;
-		background: url('../images/glasses-category.jpg');
+		background: url('../../assets/images/glasses-category.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
 	.sale {
 		@include category-centertext;
-		background: url('../images/sale-category.jpg');
+		background: url('../../assets/images/sale-category.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
 	.bags {
 		@include category-centertext;
-		background: url('../images/bags-category.jpg');
+		background: url('../../assets/images/bags-category.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
 	.womens {
 		@include category-centertext;
-		background: url('../images/womens-category.jpg');
+		background: url('../../assets/images/womens-category.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -159,7 +159,7 @@
 }
 
 @mixin updates {
-	background: url('../images/wave-bkgd.jpg');
+	background: url('../../assets/images/wave-bkgd.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;

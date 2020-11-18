@@ -41,27 +41,27 @@ nav {
 	}
 	.mens {
 		@include category-centertext;
-		background: url('../images/mens-category.jpg');
+		background: url('../../assets/images/mens-category.jpg');
 	}
 	.trends {
 		@include category-centertext;
-		background: url('../images/trends-category.jpg');
+		background: url('../../assets/images/trends-category.jpg');
 	}
 	.glasses {
 		@include category-centertext;
-		background: url('../images/glasses-category.jpg');
+		background: url('../../assets/images/glasses-category.jpg');
 	}
 	.sale {
 		@include category-centertext;
-		background: url('../images/sale-category.jpg');
+		background: url('../../assets/images/sale-category.jpg');
 	}
 	.bags {
 		@include category-centertext;
-		background: url('../images/bags-category.jpg');
+		background: url('../../assets/images/bags-category.jpg');
 	}
 	.womens {
 		@include category-centertext;
-		background: url('../images/womens-category.jpg');
+		background: url('../../assets/images/womens-category.jpg');
 	}
 }
 
@@ -481,7 +481,7 @@ footer {
 		}
 
 		.logo {
-			background: url('../images/aloha-logo.svg');
+			background: url('../../assets/images/aloha-logo.svg');
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;

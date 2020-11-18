@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --output-style compressed -o css/ sass/style.scss",
-    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "scss": "node-sass --output-style compressed -o src/styles/css/ src/styles/scss/style.scss",
+    "autoprefixer": "postcss -u autoprefixer -r src/styles/css/*",
     "build:css": "npm run scss && npm run autoprefixer",
-    "uglify-js": "uglifyjs src/*.js -m -o js/script.min.js",
-    "serve": "browser-sync start --server --files 'css/*.css, js/*.js'"
+    "uglify-js": "uglifyjs src/js/script.js -m -o src/js/script.min.js",
+    "serve": "browser-sync start --server --files 'src/styles/css/*.css, src/js/*.js'"
   },
   "author": "",
   "license": "ISC",
