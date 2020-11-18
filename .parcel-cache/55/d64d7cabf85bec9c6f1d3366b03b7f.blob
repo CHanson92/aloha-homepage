@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Aloha Homepage</title>
+		<link rel="stylesheet" href="64945d6988209ff974b09cd7adb041c4">
+		<link rel="stylesheet" href="3ed6a607d861346422a47a5aaf76d9bc" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+		<meta name="description" content="Aloha Apparel Co. sells only the finest ready-to-travel
+			clothing.">
+		<meta name="author" content="Chris Hanson">
+	</head>
+	<body>
+		<header>
+			<div class="Aloha-logo">
+				<img alt="logo" loading="lazy" src="b8f741b86b82aa21e0c6e85d226a9bc0">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#shop">SHOP</a></li>
+					<li><a href="#featured">FEATURED</a></li>
+					<li><a href="#updates">UPDATES</a></li>
+				</ul>
+			</nav>
+			<div class="Cart-logo">
+				<img alt="basket" loading="lazy" src="4c2f773f111159c1ec447888ea4d7441">
+			</div>
+		</header>
+
+		<section class="class-background">
+			<h3>NEW COLLECTION</h3>
+			<h1>Spring/Summer <span>2021</span></h1>
+		</section>
+
+		<section id="about" class="handcraftedstyles">
+			<h1>Hand-Crafted <span> Styles </span></h1>
+			<p>
+				Aloha Apparel Co. sells only the finest ready-to-travel
+				clothing. <br>
+				Browse our current selection of products or sign-up for updates
+				below.
+			</p>
+		</section>
+
+		<section id="shop" class="categories">
+			<section class="mens">
+				<p>MEN'S</p>
+			</section>
+			<section class="trends">
+				<p>TRENDS</p>
+			</section>
+			<section class="glasses">
+				<p>GLASSES</p>
+			</section>
+			<section class="sale">
+				<p>SALE</p>
+			</section>
+			<section class="bags">
+				<p>BAGS</p>
+			</section>
+			<section class="womens">
+				<p>WOMEN'S</p>
+			</section>
+		</section>
+
+		<section id="featured" class="mostlovedproducts">
+			<h1>Most-Loved <span>Products</span></h1>
+			<div class="main-carousel">
+				<div class="carousel-cell">
+					<img alt="Checked stretch dress" loading="lazy" src="e29285c1721c94aac3aad91da6879182">
+					<p class="product-type">DRESSES</p>
+					<h3>Checked Stretch Dress</h3>
+					<p class="price">$129.00</p>
+					<button class="cart">Add to Cart</button>
+				</div>
+
+				<div class="carousel-cell">
+					<img alt="Blue hipster backpack" loading="lazy" src="96f56f99dd80b6b112ee86b3be68c3bb">
+					<p class="product-type">BAGS</p>
+					<h3>Blue Hipster Backpack</h3>
+					<p class="price">$69.00</p>
+					<button>Add to Cart</button>
+				</div>
+
+				<div class="carousel-cell">
+					<img alt="Denim overall shorts" loading="lazy" src="c8be7197a5930c5daf4ee679b2339bfe">
+					<p class="product-type">DENIM</p>
+					<h3>Denim Overall Shorts</h3>
+					<p class="price">$89.00</p>
+					<button>Add to Cart</button>
+				</div>
+
+				<div class="carousel-cell">
+					<img alt="Pink dotted dress" loading="lazy" src="43b34a120d95a1f06fe32c9d5330e099">
+					<p class="product-type">DRESSES</p>
+					<h3>Pink Dotted Dress</h3>
+					<p class="price">$99.00</p>
+					<button>Add to Cart</button>
+				</div>
+
+				<div class="carousel-cell">
+					<img alt="Blue silk dress" loading="lazy" src="08493b0ee84ddaa3c5e3be5a5ed00535">
+					<p class="product-type">DRESSES</p>
+					<h3>Blue Silk Dress</h3>
+					<p class="price">$159.00</p>
+					<button>Add to Cart</button>
+				</div>
+
+				<div class="carousel-cell">
+					<img alt="Blue cotton shirt" loading="lazy" src="4e6fdfa17f1a1a7ec72f9825caa736f0">
+					<p class="product-type">SHIRTS</p>
+					<h3>Blue Cotton Shirt</h3>
+					<p class="price">$59.99</p>
+					<button>Add to Cart</button>
+				</div>
+
+				<div class="carousel-cell">
+					<img alt="Yellow cotton t-shirt" loading="lazy" src="51fc1571cc8011909a12af033dc0d106">
+					<p class="product-type">T-SHIRTS</p>
+					<h3>Yellow Cotton T-Shirt</h3>
+					<p class="price">$39.99</p>
+					<button>Add to Cart</button>
+				</div>
+
+				<div class="carousel-cell">
+					<img alt="Stretch knit dress" loading="lazy" src="6330ddea386e261b75800b7d8cc2c09c">
+					<p class="product-type">DRESSES</p>
+					<h3>Stretch Knit Dress</h3>
+					<p class="price">$129.99</p>
+					<button>Add to Cart</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="updates" class="updates">
+			<h1>Sign-up for <span>Updates</span></h1>
+			<p>
+				Stay updated on our latest product releases, be first to find
+				out about
+				<br>
+				upcoming sales, and get free style tips from our blog.
+				Unsubscribe at any time.
+			</p>
+			<form>
+				<input type="email" name="email" title="Please provide a valid email address" class="subscribe-email" placeholder="aloha@example.com">
+				<input type="submit" class="subscribe" value="Subscribe">
+			</form>
+		</section>
+
+		<footer>
+			<section class="details">
+				<p>
+					© 2016 Aloha Apparel Co.<br>
+					Powered by HTML and CSS.<br>
+					<br>
+					604-604-6040. <br>
+					<a href="7bd27ba8c7b2e5af26e84603d2cfe51f" class="email">info@alohaapparel.com</a>
+				</p>
+				<p class="address">
+					1490 W Broadway <br>
+					Vancouver, BC, Canada
+				</p>
+			</section>
+
+			<section class="logo"></section>
+			<section class="socialmedia">
+				<ul>
+					<li>
+						<a><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+					</li>
+					<li>
+						<a><i class="fab fa-twitter"></i><span>Twitter</span></a>
+					</li>
+					<li>
+						<a><i class="fab fa-instagram"></i><span>Instagram</span></a>
+					</li>
+					<li>
+						<a><i class="fab fa-pinterest"></i><span>Pinterest</span></a>
+					</li>
+					<li>
+						<a><i class="fab fa-google-plus-g"></i><span>Google+</span></a>
+					</li>
+				</ul>
+			</section>
+		</footer>
+
+		<script src="b40901f8f700dd06c7432dda02025a0d"></script>
+	</body>
+</html>

@@ -2,30 +2,21 @@
   "name": "aloha1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
-    "scss": "sass src/styles/scss/style.scss src/styles/css/style.css",
-    "autoprefixer": "postcss -u autoprefixer -r src/styles/css/style.css",
-    "build:css": "npm run scss && npm run autoprefixer",
-    "uglify-js": "uglifyjs src/js/script.js -m -o src/js/script.min.js",
-    "serve": "browser-sync start --server --files 'src/styles/css/*.css, src/js/*.js'"
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babelify": "^7.3.0",
-    "browser-sync": "^2.26.7",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.0",
-    "postcss-cli": "^6.1.3",
-    "uglify-js": "^3.6.0"
+    "parcel": "^2.0.0-beta.1"
   },
   "dependencies": {
+    "flickity": "^2.2.1",
     "sass": "^1.29.0"
   }
 }

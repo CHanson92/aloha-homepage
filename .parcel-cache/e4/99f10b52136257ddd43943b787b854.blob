@@ -1,0 +1,13 @@
+"use strict";
+
+var _flickity = _interopRequireDefault(require("flickity"));
+
+require("flickity/css/flickity.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const carousel = new _flickity.default('.main-carousel', {
+  cellAlign: 'left',
+  contain: true,
+  groupCells: true
+});
