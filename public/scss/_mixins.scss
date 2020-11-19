@@ -1,9 +1,9 @@
 @mixin primaryfontcolor {
-	color: white;
+	color: #fff;
 }
 
 @mixin secondaryfontcolor {
-	color: black;
+	color: #000;
 }
 
 @mixin navfontcolor {
@@ -15,29 +15,33 @@
 }
 
 @mixin class-background {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	background: url('../../src/assets/images/banner-girl.png'),
 		url('../../src/assets/images/flower-bkgd.jpg');
 	background-position-x: 50%;
 	background-position-y: 100%;
 	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	h1,
 	h3 {
-		color: white;
+		color: #fff;
 		text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
 	}
+
 	h1 {
-		font-family: 'Playfair Display';
+		font-family: 'Playfair Display', sans-serif;
 		font-size: 48px;
 	}
+
 	h3 {
-		font-family: 'Raleway';
+		font-family: 'Raleway', sans-serif;
 		font-size: 1.25rem;
 		padding-bottom: 1em;
 	}
+
 	span {
 		display: flex;
 		justify-content: center;
@@ -45,16 +49,18 @@
 }
 
 @mixin handcraftedstyles {
-	font-family: 'Raleway Light';
-	text-align: center;
+	font-family: 'Raleway Light', sans-serif;
 	line-height: 2rem;
 	margin: 2rem;
+	text-align: center;
+
 	h1 {
-		font-family: 'Playfair DisplayItalic';
+		font-family: 'Playfair DisplayItalic', sans-serif;
 		font-size: 2.4rem;
 		margin-bottom: 1.5rem;
+
 		span {
-			font-family: 'Playfair DisplayBold';
+			font-family: 'Playfair DisplayBold', sans-serif;
 			font-size: 2.4rem;
 		}
 	}
@@ -64,85 +70,100 @@
 	p {
 		@include categories-font;
 	}
+
 	.mens {
 		@include category-centertext;
+
 		background: url('../../src/assets/images/mens-category.jpg');
-		background-size: cover;
 		background-repeat: no-repeat;
+		background-size: cover;
 	}
+
 	.trends {
 		@include category-centertext;
+
 		background: url('../../src/assets/images/trends-category.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
 		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
+
 	.glasses {
 		@include category-centertext;
+
 		background: url('../../src/assets/images/glasses-category.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
 		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
+
 	.sale {
 		@include category-centertext;
+
 		background: url('../../src/assets/images/sale-category.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
 		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
+
 	.bags {
 		@include category-centertext;
+
 		background: url('../../src/assets/images/bags-category.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
 		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
+
 	.womens {
 		@include category-centertext;
+
 		background: url('../../src/assets/images/womens-category.jpg');
-		background-size: cover;
 		background-repeat: no-repeat;
+		background-size: cover;
 	}
 }
 
 @mixin categories-font {
-	font-family: 'Raleway';
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
 	font-size: 2.25rem;
-	color: white;
 }
 
 @mixin category-centertext {
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 @mixin mostlovedproductsheader {
-	text-align: center;
-	padding-top: 2.5rem;
 	margin-bottom: 2.5rem;
+	padding-top: 2.5rem;
+	text-align: center;
+
 	h1 {
-		color: black;
-		font-family: 'Playfair DisplayItalic';
+		color: #000;
+		font-family: 'Playfair DisplayItalic', sans-serif;
 		font-size: 2.25rem;
 		margin-bottom: 2.5rem;
+
 		span {
-			font-family: 'Playfair DisplayBold';
+			font-family: 'Playfair DisplayBold', sans-serif;
 		}
 	}
+
 	h3 {
-		font-family: 'Playfair Display';
+		color: #f00;
+		font-family: 'Playfair Display', sans-serif;
 		font-size: 1.5rem;
-		color: red;
 		padding-top: 1em;
 	}
 }
 
 @mixin carousel {
 	p {
-		font-family: 'Raleway';
-		color: gray;
+		color: #808080;
+		font-family: 'Raleway', sans-serif;
 		padding-top: 1em;
 	}
 
@@ -152,10 +173,11 @@
 
 	button {
 		@include primaryfontcolor;
-		cursor: pointer;
-		background: black;
-		border: none;
+
+		background: #000;
+		border: 0;
 		border-radius: 1rem;
+		cursor: pointer;
 		margin-top: 1em;
 		padding: 1em 3em;
 	}
@@ -163,77 +185,84 @@
 
 @mixin updates {
 	background: url('../../src/assets/images/wave-bkgd.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
 	background-position: bottom;
-	margin-bottom: 0.5rem;
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 20rem;
+	margin-bottom: 0.5rem;
+
 	h1 {
 		@include center;
-		color: white;
-		font-family: 'Playfair DisplayItalic';
+
+		color: #fff;
+		font-family: 'Playfair DisplayItalic', sans-serif;
 		font-size: 2.25rem;
 		text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
+
 		span {
-			font-family: 'Playfair DisplayBold';
-			text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
+			font-family: 'Playfair DisplayBold', sans-serif;
 			margin-left: 0.5rem;
+			text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
 		}
 	}
+
 	p {
 		@include center;
-		font-family: 'Raleway Light';
-		color: white;
+
+		color: #fff;
+		font-family: 'Raleway Light', sans-serif;
 		line-height: 1.5rem;
 		text-align: center;
 		text-shadow: 0 0 40px hsla(0, 0%, 39%, 0.8);
 	}
+
 	form {
 		@include center;
+
 		flex-direction: row;
-		font-family: 'Raleway Medium';
+		font-family: 'Raleway Medium', sans-serif;
+
+		input {
+			padding-left: 1.875rem;
+		}
 
 		form button,
 		form input {
 			font-size: 1rem;
 		}
 
-		input[type='email'] {
-			padding-left: 1.875rem;
-		}
-
 		.subscribe-email {
-			border: none;
+			border: 0;
 			border-radius: 1.25rem;
-			color: #969696;
 			box-sizing: border-box;
-			height: 3rem;
+			color: #969696;
 			flex-grow: 2;
 			font-size: 1rem;
+			height: 3rem;
 		}
 
 		.subscribe {
 			background: #e2574c;
-			color: white;
-			margin-top: 3px;
 			border-radius: 1.25rem;
-			height: 2.8125rem;
-			width: 9.375rem;
+			color: #fff;
 			font-size: 1rem;
+			height: 2.8125rem;
+			margin-top: 3px;
+			width: 9.375rem;
 		}
 	}
 }
 
 @mixin center {
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 @mixin footerlinks {
 	a {
-		color: white;
-    text-decoration: none;
-    cursor: pointer;
+		color: #fff;
+		cursor: pointer;
+		text-decoration: none;
 	}
 }

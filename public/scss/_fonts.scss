@@ -1,107 +1,121 @@
 @font-face {
 	font-family: 'Raleway LightItalic';
+	font-style: italic;
+	font-weight: 300;
 	src: url('../../src/assets/fonts/Raleway-LightItalic.eot');
 	src: url('../../src/assets/fonts/Raleway-LightItalic.eot?#iefix')
-			format('embedded-opentype'),
+		format('embedded-opentype'),
 		url('../../src/assets/fonts/Raleway-LightItalic.woff2') format('woff2'),
 		url('../../src/assets/fonts/Raleway-LightItalic.woff') format('woff'),
 		url('../../src/assets/fonts/Raleway-LightItalic.ttf') format('truetype'),
 		url('../../src/assets/fonts/Raleway-LightItalic.svg#Raleway-LightItalic')
-			format('svg');
-	font-weight: 300;
-	font-style: italic;
+		format('svg');
 }
 
 @font-face {
 	font-family: 'Raleway Medium';
+	font-style: normal;
+	font-weight: 500;
 	src: url('../../src/assets/fonts/Raleway-Medium.eot');
-	src: url('../../src/assets/fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+	src: url('../../src/assets/fonts/Raleway-Medium.eot?#iefix')
+		format('embedded-opentype'),
 		url('../../src/assets/fonts/Raleway-Medium.woff2') format('woff2'),
 		url('../../src/assets/fonts/Raleway-Medium.woff') format('woff'),
 		url('../../src/assets/fonts/Raleway-Medium.ttf') format('truetype'),
-		url('../../src/assets/fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
-	font-weight: 500;
-	font-style: normal;
+		url('../../src/assets/fonts/Raleway-Medium.svg#Raleway-Medium')
+		format('svg');
 }
 
 @font-face {
 	font-family: 'Raleway Light';
+	font-style: normal;
+	font-weight: 300;
 	src: url('../../src/assets/fonts/Raleway-Light.eot');
-	src: url('../../src/assets/fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+	src: url('../../src/assets/fonts/Raleway-Light.eot?#iefix')
+		format('embedded-opentype'),
 		url('../../src/assets/fonts/Raleway-Light.woff2') format('woff2'),
 		url('../../src/assets/fonts/Raleway-Light.woff') format('woff'),
 		url('../../src/assets/fonts/Raleway-Light.ttf') format('truetype'),
-		url('../../src/assets/fonts/Raleway-Light.svg#Raleway-Light') format('svg');
-	font-weight: 300;
-	font-style: normal;
+		url('../../src/assets/fonts/Raleway-Light.svg#Raleway-Light')
+		format('svg');
 }
 
 @font-face {
 	font-family: 'Raleway MediumItalic';
+	font-style: italic;
+	font-weight: 500;
 	src: url('../../src/assets/fonts/Raleway-MediumItalic.eot');
 	src: url('../../src/assets/fonts/Raleway-MediumItalic.eot?#iefix')
-			format('embedded-opentype'),
+		format('embedded-opentype'),
 		url('../../src/assets/fonts/Raleway-MediumItalic.woff2') format('woff2'),
 		url('../../src/assets/fonts/Raleway-MediumItalic.woff') format('woff'),
-		url('../../src/assets/fonts/Raleway-MediumItalic.ttf') format('truetype'),
+		url('../../src/assets/fonts/Raleway-MediumItalic.ttf')
+		format('truetype'),
 		url('../../src/assets/fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic')
-			format('svg');
-	font-weight: 500;
-	font-style: italic;
+		format('svg');
 }
 
 @font-face {
 	font-family: 'Playfair DisplayBold';
+	font-style: normal;
+	font-weight: bold;
 	src: url('../../src/assets/fonts/PlayfairDisplay-Bold.eot');
 	src: url('../../src/assets/fonts/PlayfairDisplay-Bold.eot?#iefix')
-			format('embedded-opentype'),
+		format('embedded-opentype'),
 		url('../../src/assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
 		url('../../src/assets/fonts/PlayfairDisplay-Bold.woff') format('woff'),
-		url('../../src/assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+		url('../../src/assets/fonts/PlayfairDisplay-Bold.ttf')
+		format('truetype'),
 		url('../../src/assets/fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold')
-			format('svg');
-	font-weight: bold;
-	font-style: normal;
+		format('svg');
 }
 
 @font-face {
 	font-family: 'Playfair DisplayItalic';
+	font-style: italic;
+	font-weight: normal;
 	src: url('../../src/assets/fonts/PlayfairDisplay-Italic.eot');
 	src: url('../../src/assets/fonts/PlayfairDisplay-Italic.eot?#iefix')
-			format('embedded-opentype'),
-		url('../../src/assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+		format('embedded-opentype'),
+		url('../../src/assets/fonts/PlayfairDisplay-Italic.woff2')
+		format('woff2'),
 		url('../../src/assets/fonts/PlayfairDisplay-Italic.woff') format('woff'),
-		url('../../src/assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+		url('../../src/assets/fonts/PlayfairDisplay-Italic.ttf')
+		format('truetype'),
 		url('../../src/assets/fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic')
-			format('svg');
-	font-weight: normal;
-	font-style: italic;
+		format('svg');
 }
 
 @font-face {
 	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: normal;
 	src: url('../../src/assets/fonts/PlayfairDisplay-Regular.eot');
 	src: url('../../src/assets/fonts/PlayfairDisplay-Regular.eot?#iefix')
-			format('embedded-opentype'),
-		url('../../src/assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-		url('../../src/assets/fonts/PlayfairDisplay-Regular.woff') format('woff'),
-		url('../../src/assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+		format('embedded-opentype'),
+		url('../../src/assets/fonts/PlayfairDisplay-Regular.woff2')
+		format('woff2'),
+		url('../../src/assets/fonts/PlayfairDisplay-Regular.woff')
+		format('woff'),
+		url('../../src/assets/fonts/PlayfairDisplay-Regular.ttf')
+		format('truetype'),
 		url('../../src/assets/fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular')
-			format('svg');
-	font-weight: normal;
-	font-style: normal;
+		format('svg');
 }
 
 @font-face {
 	font-family: 'Playfair DisplayBoldItalic';
+	font-style: italic;
+	font-weight: bold;
 	src: url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.eot');
 	src: url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.eot?#iefix')
-			format('embedded-opentype'),
-		url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
-		url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
-		url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+		format('embedded-opentype'),
+		url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.woff2')
+		format('woff2'),
+		url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.woff')
+		format('woff'),
+		url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.ttf')
+		format('truetype'),
 		url('../../src/assets/fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic')
-			format('svg');
-	font-weight: bold;
-	font-style: italic;
+		format('svg');
 }

@@ -9,7 +9,7 @@ ehthumbs.db
 *.Trashes
 # Ignore npm packages
 node_modules/
-# Ignore project folder
-project-01
 # Ignore parcel files
 .parcel-cache/
+# Ignore eslint cache
+.eslintcache

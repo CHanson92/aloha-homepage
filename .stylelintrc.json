@@ -1,0 +1,11 @@
+{
+	"extends": [
+		"stylelint-config-standard",
+		"stylelint-config-prettier",
+		"stylelint-config-sass-guidelines"
+	],
+	"rules": {
+		"indentation": "tab",
+		"selector-max-compound-selectors": null
+	}
+}

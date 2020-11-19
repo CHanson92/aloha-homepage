@@ -1,271 +1,295 @@
 /* Media Queries */
 
-@media screen and (min-width: 0px) {
-  /* Header */
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 6em auto;
-    .Aloha-logo {
-      grid-column: 1;
-    }
-    nav {
-      grid-column: 1/3;
-      grid-row: 2;
-    }
-    .Cart-logo {
-      grid-column: 2;
-    }
-  }
+@media screen and (min-width: 0) {
+	/* Header */
+	header {
+		display: grid;
+		grid-auto-rows: 6em auto;
+		grid-template-columns: 1fr 1fr;
 
-  /* Categories */
-  .categories {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
-    .mens {
-      grid-column: 1/3;
-      grid-row: 1;
-    }
-    .trends {
-      grid-column: 1;
-      grid-row: 2;
-    }
-    .glasses {
-      grid-column: 2;
-      grid-row: 2;
-    }
-    .sale {
-      grid-column: 1;
-      grid-row: 3;
-    }
-    .bags {
-      grid-column: 2;
-      grid-row: 3;
-    }
-    .womens {
-      grid-column: 1/3;
-      grid-row: 4;
-    }
-  }
+		.aloha-logo {
+			grid-column: 1;
+		}
 
-  /* Updates */
-  .updates {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+		nav {
+			grid-column: 1/3;
+			grid-row: 2;
+		}
 
-    h1 {
-      grid-row: 1;
-      grid-column: 1/4;
-    }
+		.cart-logo {
+			grid-column: 2;
+		}
+	}
 
-    p {
-      grid-row: 2;
-      grid-column: 1/4;
-    }
+	/* Categories */
+	.categories {
+		display: grid;
+		grid-gap: 1em;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    form {
-      grid-row: 3;
-      grid-column: 1/4;
-    }
-  }
+		.mens {
+			grid-column: 1/3;
+			grid-row: 1;
+		}
+
+		.trends {
+			grid-column: 1;
+			grid-row: 2;
+		}
+
+		.glasses {
+			grid-column: 2;
+			grid-row: 2;
+		}
+
+		.sale {
+			grid-column: 1;
+			grid-row: 3;
+		}
+
+		.bags {
+			grid-column: 2;
+			grid-row: 3;
+		}
+
+		.womens {
+			grid-column: 1/3;
+			grid-row: 4;
+		}
+	}
+
+	/* Updates */
+	.updates {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+
+		h1 {
+			grid-column: 1/4;
+			grid-row: 1;
+		}
+
+		p {
+			grid-column: 1/4;
+			grid-row: 2;
+		}
+
+		form {
+			grid-column: 1/4;
+			grid-row: 3;
+		}
+	}
 }
 
 @media screen and (min-width: 600px) {
-  body {
-    display: grid;
-    grid-auto-columns: auto;
-    grid-auto-rows: auto;
-  }
+	body {
+		display: grid;
+		grid-auto-columns: auto;
+		grid-auto-rows: auto;
+	}
 
-  /* Header grid */
-  header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    .Aloha-logo {
-      grid-column: 1;
-    }
-    nav {
-      grid-column: 2;
-      grid-row: 1;
-    }
-    .Cart-logo {
-      grid-column: 3;
-    }
-  }
+	/* Header grid */
+	header {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
 
-  /* Categories grid */
-  .categories {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1rem;
-    .mens {
-      grid-column: 1/3;
-      grid-row: 1;
-    }
-    .trends {
-      grid-column: 3;
-      grid-row: 1;
-    }
-    .glasses {
-      grid-column: 4;
-      grid-row: 1;
-    }
-    .sale {
-      grid-column: 1;
-      grid-row: 2;
-    }
-    .bags {
-      grid-column: 2;
-      grid-row: 2;
-    }
-    .womens {
-      grid-column: 3/5;
-      grid-row: 2;
-    }
-  }
+		.aloha-logo {
+			grid-column: 1;
+		}
 
-  /* Updates grid */
-  .updates {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+		nav {
+			grid-column: 2;
+			grid-row: 1;
+		}
 
-    h1 {
-      grid-row: 1;
-      grid-column: 1/4;
-    }
+		.cart-logo {
+			grid-column: 3;
+		}
+	}
 
-    p {
-      grid-row: 2;
-      grid-column: 1/4;
-    }
+	/* Categories grid */
+	.categories {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 
-    form {
-      grid-row: 3;
-      grid-column: 2/3;
-    }
-  }
+		.mens {
+			grid-column: 1/3;
+			grid-row: 1;
+		}
 
-  /* Footer grid */
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+		.trends {
+			grid-column: 3;
+			grid-row: 1;
+		}
 
-    .details {
-      grid-column: 1;
-    }
+		.glasses {
+			grid-column: 4;
+			grid-row: 1;
+		}
 
-    .logo {
-      grid-column: 2;
-    }
+		.sale {
+			grid-column: 1;
+			grid-row: 2;
+		}
 
-    .socialmedia {
-      grid-column: 3;
-      grid-row: 1;
-    }
-  }
+		.bags {
+			grid-column: 2;
+			grid-row: 2;
+		}
+
+		.womens {
+			grid-column: 3/5;
+			grid-row: 2;
+		}
+	}
+
+	/* Updates grid */
+	.updates {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+
+		h1 {
+			grid-column: 1/4;
+			grid-row: 1;
+		}
+
+		p {
+			grid-column: 1/4;
+			grid-row: 2;
+		}
+
+		form {
+			grid-column: 2/3;
+			grid-row: 3;
+		}
+	}
+
+	/* Footer grid */
+	footer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		.details {
+			grid-column: 1;
+		}
+
+		.logo {
+			grid-column: 2;
+		}
+
+		.socialmedia {
+			grid-column: 3;
+			grid-row: 1;
+		}
+	}
 }
 
 @media screen and (min-width: 1240px) {
-  body {
-    display: grid;
-    grid-auto-columns: auto;
-    grid-auto-rows: auto;
-  }
+	body {
+		display: grid;
+		grid-auto-columns: auto;
+		grid-auto-rows: auto;
+	}
 
-  /* Header grid */
+	/* Header grid */
 
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+	header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 
-    .Aloha-logo {
-      grid-column: 1;
-    }
+		.aloha-logo {
+			grid-column: 1;
+		}
 
-    nav {
-      grid-column: 2;
-      grid-row: 1;
-    }
+		nav {
+			grid-column: 2;
+			grid-row: 1;
+		}
 
-    .Cart-logo {
-      grid-column: 3;
-    }
-  }
+		.cart-logo {
+			grid-column: 3;
+		}
+	}
 
-  /* Categories grid */
+	/* Categories grid */
 
-  .categories {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1rem;
-    .mens {
-      grid-column: 1/3;
-      grid-row: 1;
-    }
-    .trends {
-      grid-column: 3;
-      grid-row: 1;
-    }
-    .glasses {
-      grid-column: 4;
-      grid-row: 1;
-    }
-    .sale {
-      grid-column: 1;
-      grid-row: 2;
-    }
-    .bags {
-      grid-column: 2;
-      grid-row: 2;
-    }
-    .womens {
-      grid-column: 3/5;
-      grid-row: 2;
-    }
-  }
+	.categories {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 
-  /* Updates grid */
+		.mens {
+			grid-column: 1/3;
+			grid-row: 1;
+		}
 
-  .updates {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+		.trends {
+			grid-column: 3;
+			grid-row: 1;
+		}
 
-    h1 {
-      grid-row: 1;
-      grid-column: 1/4;
-    }
+		.glasses {
+			grid-column: 4;
+			grid-row: 1;
+		}
 
-    p {
-      grid-row: 2;
-      grid-column: 1/4;
-    }
+		.sale {
+			grid-column: 1;
+			grid-row: 2;
+		}
 
-    form {
-      grid-row: 3;
-      grid-column: 2/3;
-    }
-  }
+		.bags {
+			grid-column: 2;
+			grid-row: 2;
+		}
 
-  /* Footer grid */
+		.womens {
+			grid-column: 3/5;
+			grid-row: 2;
+		}
+	}
 
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+	/* Updates grid */
 
-    .details {
-      grid-column: 1;
-    }
+	.updates {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 
-    .socialmedia {
-      grid-column: 3;
-      grid-row: 1;
-    }
-  }
+		h1 {
+			grid-column: 1/4;
+			grid-row: 1;
+		}
+
+		p {
+			grid-column: 1/4;
+			grid-row: 2;
+		}
+
+		form {
+			grid-column: 2/3;
+			grid-row: 3;
+		}
+	}
+
+	/* Footer grid */
+
+	footer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		.details {
+			grid-column: 1;
+		}
+
+		.socialmedia {
+			grid-column: 3;
+			grid-row: 1;
+		}
+	}
 }
